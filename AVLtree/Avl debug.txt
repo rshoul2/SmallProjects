@@ -1,0 +1,20 @@
+    public void verifyTree(Node x){
+        if (x==root) {log.append("\nverifyTree: ");}
+        if (x==null){
+            log.append("no nodes present");
+            return;
+        }
+        if (x.left!=null){
+            log.append("-left-");
+            verifyTree(x.left);
+        }
+        log.append("-[")
+            .append(x==root?"ROOT ":"")
+            .append(Integer.toString(x.key)).append(" BF=")
+            .append(Integer.toString(Node.balanceFactor(x))).append("]-");
+        if (x.right!=null){
+            log.append("-right-");
+            verifyTree(x.right);
+        }
+        log.append(x==root?"-done":"-up-");
+    }

@@ -1,0 +1,42 @@
+     Comparison: Merge, Heap (in Nano-Seconds)
+---------------------------------------------------
+ -Both using the same integers (Range: 0-128000)
+  and size of array.
+
+Trial 1:
+--------
+Size = 1000: 590544, 633732
+Size = 2000: 126148, 385286
+Size = 4000: 266835, 880469
+Size = 8000: 827017, 1745117
+Size = 16000: 1345720, 2928342
+Size = 32000: 2539635, 5922536
+Size = 64000: 5970858, 12931228
+Size = 128000: 11461498, 27470735
+
+Trial 2:
+--------
+Size = 1000: 51742, 126576
+Size = 2000: 111609, 271111
+Size = 4000: 241178, 584984
+Size = 8000: 504591, 1255493
+Size = 16000: 1064346, 2721374
+Size = 32000: 2233032, 5840433
+Size = 64000: 5064304, 12598967
+Size = 128000: 11011642, 27541720
+
+Trial 3:
+--------
+Size = 1000: 53453, 127003
+Size = 2000: 112892, 272394
+Size = 4000: 236046, 585412
+Size = 8000: 499460, 1263189
+Size = 16000: 1054083, 2732492
+Size = 32000: 2215499, 5847703
+Size = 64000: 5129301, 12661828
+Size = 128000: 11133942, 27320212
+
+
+-As seen in these three trials of increasing size
+the mergeSort algorithm seems to be the better one
+for sorting arrays such as these.
